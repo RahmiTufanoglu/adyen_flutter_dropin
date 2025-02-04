@@ -84,6 +84,8 @@ class FlutterAdyen {
     // Invoke the native method for opening the Adyen drop-in
     final response = await _channel.invokeMethod<String>('openDropIn', args);
 
+    print('FlutterAdyen Response: $response');
+
     // Handle different response scenarios and throw exceptions if necessary
     switch (response) {
       case 'PAYMENT_ERROR':

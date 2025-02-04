@@ -2,12 +2,12 @@ group 'app.adyen.flutter_adyen'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.7.10'
+    ext.kotlin_version = '1.8.22'
     // Dependencies
     ext.version_support_library = "1.4.1"
     ext.version_lifecycle_extensions = "2.2.0"
     ext.version_adyen_cse = "1.0.5"
-    ext.version_adyen3ds2 = "2.1.0-rc04"
+    ext.version_adyen3ds2 = "2.2.21"
 
     // External Dependencies
     ext.version_play_services_wallet = "16.0.1"
@@ -29,7 +29,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.0.4'
+        classpath 'com.android.tools.build:gradle:8.0.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
@@ -45,7 +45,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 33
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
